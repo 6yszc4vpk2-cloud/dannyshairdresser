@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danny's Hairdresser | Book Online</title>
+    <title>Danny's Hairdresser | Home</title>
 
-    <meta name="description" content="Danny's Hairdresser - Men's barbershop in Amsterdam. Book your haircut or beard trim online or via WhatsApp.">
+    <meta name="description" content="Danny's Hairdresser - Men's barbershop in Amsterdam. Classic online booking, fades, beard trims, and modern men's grooming.">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/921/921071.png">
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            color: #222;
+            background: #111;
+            color: #eee;
         }
 
         header {
@@ -23,31 +23,43 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 2px solid #D4AF37;
         }
 
         header h1 {
             margin: 0;
             font-size: 26px;
+            color: #D4AF37;
         }
 
         nav a {
             color: #fff;
             margin-left: 20px;
             text-decoration: none;
+            font-size: 16px;
         }
 
         .hero {
-            background: url('https://images.unsplash.com/photo-1593702235099-3b57e9a3c2b1') center/cover no-repeat;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             text-align: center;
-            color: white;
+            padding: 40px;
+            background: linear-gradient(to bottom, #000, #222);
+            color: #D4AF37;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #eee;
         }
 
         .btn {
-            background: #e6b800;
+            background: #D4AF37;
             padding: 12px 25px;
             color: #000;
             font-weight: bold;
@@ -55,45 +67,34 @@
             border-radius: 5px;
         }
 
-        section {
-            padding: 50px 40px;
+        .home-photo {
+            text-align: center;
+            padding: 40px;
+            background: #000;
         }
 
-        h3 {
-            font-size: 28px;
+        .home-photo h3 {
+            font-size: 32px;
             margin-bottom: 20px;
+            background: linear-gradient(to right, #D4AF37, #C9A23F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
         }
 
-        .services div {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .calendar {
-            max-width: 400px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        input, select {
-            width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+        .home-photo p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #eee;
         }
 
         footer {
             background: #000;
-            color: #fff;
+            color: #D4AF37;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
+            border-top: 2px solid #D4AF37;
         }
     </style>
 </head>
@@ -102,50 +103,31 @@
 <header>
     <h1>💈 Danny's Hairdresser</h1>
     <nav>
-        <a href="#services">Services</a>
-        <a href="#booking">Book</a>
-        <a href="#contact">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Book</a>
+        <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <div class="hero">
-    <div>
-        <h2>Book Your Appointment</h2>
-        <p>Men’s cuts, fades & beard trims — classic online booking.</p>
-        <a class="btn" href="#booking">Book Now</a>
-    </div>
+    <h2>Premium Men's Grooming</h2>
+    <p>Sharp fades, clean beard trims, and classic men's styling in Amsterdam.</p>
+    <a class="btn" href="booking.html">Book Now</a>
 </div>
 
-<section id="services">
-    <h3>Our Services</h3>
-    <div class="services">
-        <div>💈 <strong>Classic Cut</strong> – €25</div>
-        <div>✂️ <strong>Skin Fade</strong> – €30</div>
-        <div>🔪 <strong>Buzz Cut</strong> – €20</div>
-        <div>🧔 <strong>Beard Trim</strong> – €15</div>
-        <div>🪒 <strong>Beard Shape + Razor Finish</strong> – €20</div>
-        <div>🔥 <strong>Cut + Beard Combo</strong> – €40</div>
-    </div>
+<section class="home-photo">
+    <h3>Welcome to Danny's Hairdresser</h3>
+
+    <p>
+        Professional men's barbershop located in Amstel, Amsterdam.<br>
+        Book your appointment online — fast, simple, classic.
+    </p>
 </section>
 
-<section id="booking">
-    <h3>Online Booking</h3>
+<footer>
+    Danny's Hairdresser — Amstel, Amsterdam<br>
+    © 2026 All Rights Reserved
+</footer>
 
-    <div class="calendar">
-        <label><strong>Select Service</strong></label>
-        <select id="service">
-            <option>Classic Cut – €25</option>
-            <option>Skin Fade – €30</option>
-            <option>Buzz Cut – €20</option>
-            <option>Beard Trim – €15</option>
-            <option>Beard Shape + Razor – €20</option>
-            <option>Cut + Beard Combo – €40</option>
-        </select>
-
-        <label><strong>Select Date</strong></label>
-        <input type="date" id="date">
-
-        <label><strong>Select Time</strong></label>
-        <input type="time" id="time">
-
-        <a class="btn" href="#" onclick="sendBooking()">Confirm Booking</a>
+</body>
+</html>
